@@ -1,128 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/choice-store/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/choice-store/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/choice-store/assets/styles-DvPDDfy5.css">
-  </head>
-  <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/choice-store/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choice</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <script type="module" crossorigin src="/choice/commonHelpers.js"></script>
+  <link rel="stylesheet" href="/choice/assets/index-02d99632.css">
+</head>
+
+<body>
+  <header class="header-section">
+  <div class="container header-container">
+    <nav class="header-nav">
+      <a href="./index.html" class="header-nav-logo">CHOICE</a>
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a href="./index.html" class="header-nav-link link-active">Головна</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="header-nav-item">
+          <a href="#contact-us" class="header-nav-link">Зв'язатися з нами</a>
         </li>
       </ul>
     </nav>
-  </div>
-</header>
-
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/choice-store/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
-
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
+    <ul class="header-icons-list">
+      <li class="header-icons-item">
+        <a href="https://www.facebook.com/" class="header-icons-link" target="_blank">
+          <svg class="header-icons-svg" width="20" height="20">
+            <use href="/choice/assets/icons-70d8c6f7.svg#icon-facebook"></use>
+          </svg>
         </a>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
+      <li class="header-icons-item">
+        <a href="https://www.instagram.com/p/C5N3FRmixEj" class="header-icons-link" target="_blank">
+          <svg class="header-icons-svg" width="20" height="20">
+            <use href="/choice/assets/icons-70d8c6f7.svg#icon-instagram"></use>
+          </svg>
         </a>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
+      <li class="header-icons-item">
+        <a href="https://www.youtube.com/" class="header-icons-link" target="_blank">
+          <svg class="header-icons-svg" width="20" height="20">
+            <use href="/choice/assets/icons-70d8c6f7.svg#icon-youtuber"></use>
+          </svg>
         </a>
       </li>
     </ul>
+    <button class="header-button">
+      <svg class="header-button-svg" width="28" height="14">
+        <use href="/choice/assets/icons-70d8c6f7.svg#icon-menu"></use>
+      </svg>
+    </button>
   </div>
-</article>
+</header>
+  <main>
+    <section class="about-section" id="about-us">
+  <div class="container about-container">
+    <div class="about-info">
+      <h2 class="title">СHOICE - екологічна продукція МАЙБУТНЬОГО</h2>
+      <p class="about-text text-span">
+        Ми дбаємо про здоров'я своїх клієнтів і навколишнє середовище. Вже як 20 років на ринку.
+      </p>
 
-    </main>
+      <a href="https://www.instagram.com/p/C5N3FRmixEj/" class="view-catalog-btn">Переглянути каталог</a>
+    </div>
+    <!-- <picture>
+      <source srcset="
+          ./img/about-us-img/clock-desktop.png    1x,
+          ./img/about-us-img/clock-desktop@2x.png 2x
+        " media="(min-width: 1280px)" />
+      <source srcset="
+          ./img/about-us-img/clock-tablet.png    1x,
+          ./img/about-us-img/clock-tablet@2x.png 2x
+        " media="(min-width: 768px)" />
+      <source srcset="
+          ./img/about-us-img/clock-mobile.png    1x,
+          ./img/about-us-img/clock-mobile@2x.png 2x
+        " media="(max-width: 767px)" /> -->
 
-    <footer class="footer">
+    <img class="img-hero" src="/choice/assets/photo_2024-09-05_17-21-44-9b7831d9.jpg" alt="clock" width="530" height="532" />
+    <!-- </picture> -->
+  </div>
+</section>
+    <section class="contact-us" id="contact-us">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <h2 class="contact-us-title">Зв'язатися з нами</h2>
+    <div class="contact-flex-wrapper">
+      <div class="contact-us-form-wrapper">
+        <p class="contact-us-form-text">
+          Будь ласка, використайте форму нижче, щоб зв'язатися з нами. Введіть ваше ім'я, електронну пошту, телефон і
+          повідомлення, і ми незабаром вам відповімо.
+        </p>
+        <form class="contact-us-form">
+          <div class="contact-us-input-wrapper">
+            <label class="contact-us-label">
+              <input type="text" name="user-name" placeholder="Ім'я" class="contact-us-input" required />
+            </label>
+          </div>
+          <div class="contact-us-input-wrapper">
+            <label class="contact-us-label">
+              <input type="email" name="user-email" placeholder="Електронна пошта" class="contact-us-input"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
+            </label>
+          </div>
+          <div class="contact-us-input-wrapper">
+            <label class="contact-us-label">
+              <input type="tel" name="user-phone" placeholder="+380" pattern="^\+\d{12}"
+                title="Phone number must start with +380 and consist of 12 digits." class="contact-us-input" required />
+            </label>
+          </div>
+          <div class="contact-us-input-wrapper">
+            <label class="contact-us-label">
+              <textarea class="contact-us-textarea" name="user-comment" placeholder="Повідомлення"></textarea>
+            </label>
+          </div>
+          <button class="contact-us-form-btn" type="submit">Відправити</button>
+        </form>
+      </div>
+
+      <img class="contact-us-img" src="/choice/assets/v202407_1-e0f5127a.jpg" alt="watch" width="530" height="500" />
+    </div>
   </div>
-</footer>
+</section>
+  </main>
+  
+</body>
 
-
-  </body>
 </html>
