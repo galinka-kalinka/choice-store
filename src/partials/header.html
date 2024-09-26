@@ -1,19 +1,43 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+<header class="header-section">
+  <div class="container header-container">
+    <nav class="header-nav">
+      <a href="./index.html" class="header-nav-logo">CHOICE</a>
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a href="./index.html" class="header-nav-link link-active">Головна</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="header-nav-item">
+          <a href="#contact-us" class="header-nav-link">Зв'язатися з нами</a>
         </li>
       </ul>
     </nav>
+    <ul class="header-icons-list">
+      <li class="header-icons-item">
+        <a href="https://www.facebook.com/" class="header-icons-link" target="_blank">
+          <svg class="header-icons-svg" width="20" height="20">
+            <use href="./img/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-icons-item">
+        <a href="https://www.instagram.com/p/C5N3FRmixEj" class="header-icons-link" target="_blank">
+          <svg class="header-icons-svg" width="20" height="20">
+            <use href="./img/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-icons-item">
+        <a href="https://www.youtube.com/" class="header-icons-link" target="_blank">
+          <svg class="header-icons-svg" width="20" height="20">
+            <use href="./img/icons.svg#icon-youtuber"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <button class="header-button">
+      <svg class="header-button-svg" width="28" height="14">
+        <use href="./img/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
   </div>
 </header>

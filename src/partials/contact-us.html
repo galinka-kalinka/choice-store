@@ -1,0 +1,40 @@
+<section class="contact-us" id="contact-us">
+  <div class="container">
+    <h2 class="contact-us-title">Зв'язатися з нами</h2>
+    <div class="contact-flex-wrapper">
+      <div class="contact-us-form-wrapper">
+        <p class="contact-us-form-text">
+          Будь ласка, використайте форму нижче, щоб зв'язатися з нами. Введіть ваше ім'я, електронну пошту, телефон і
+          повідомлення, і ми незабаром вам відповімо.
+        </p>
+        <form class="contact-us-form">
+          <div class="contact-us-input-wrapper">
+            <label class="contact-us-label">
+              <input type="text" name="user-name" placeholder="Ім'я" class="contact-us-input" required />
+            </label>
+          </div>
+          <div class="contact-us-input-wrapper">
+            <label class="contact-us-label">
+              <input type="email" name="user-email" placeholder="Електронна пошта" class="contact-us-input"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
+            </label>
+          </div>
+          <div class="contact-us-input-wrapper">
+            <label class="contact-us-label">
+              <input type="tel" name="user-phone" placeholder="+380" pattern="^\+\d{12}"
+                title="Phone number must start with +380 and consist of 12 digits." class="contact-us-input" required />
+            </label>
+          </div>
+          <div class="contact-us-input-wrapper">
+            <label class="contact-us-label">
+              <textarea class="contact-us-textarea" name="user-comment" placeholder="Повідомлення"></textarea>
+            </label>
+          </div>
+          <button class="contact-us-form-btn" type="submit">Відправити</button>
+        </form>
+      </div>
+
+      <img class="contact-us-img" src="./img/contact-img/v202407_1.jpg" alt="watch" width="530" height="500" />
+    </div>
+  </div>
+</section>
