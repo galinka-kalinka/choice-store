@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/choice/",
+    "build": "vite build --base=/choice-store/",
     "preview": "vite preview"
   },
   "devDependencies": {
